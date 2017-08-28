@@ -1,0 +1,460 @@
+
+.body_div {
+	width: 980px;
+	background-color: #fff;
+	height: auto;	
+	background-size:100% 100%;
+}
+.imgDef a:hover img {
+	opacity: .8;
+	filter: alpha(opacity=80)
+}
+
+.box {
+	width: 980px;
+	position: relative
+}
+.ab {
+	position: absolute;
+	z-index: 100
+}
+.header {
+	height: 560px;
+	background: url(../images/bg_tc01.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.header .titleA_1 {
+	width: 450px;
+	height: 176px;
+	background: url(../images/titleA_1.png) no-repeat center;
+	top: 82px;
+	left: 34px
+	border:1px solid red;
+}
+.header .titleB_1 {
+	width: 636px;
+	height: 207px;
+	background: url(../images/titleB_1.png) no-repeat center;
+	top: 327px;
+	left: 503px
+}
+.header .titleA {
+	width: 679px;
+	height: 266px;
+	background: url(../images/titleA.png) no-repeat;
+	top: 82px;
+	left: 34px;
+	z-index: 101
+}
+.header .titleB {
+	width: 0;
+	height: 207px;
+	background: url(../images/titleB.png) no-repeat;
+	top: 327px;
+	left: 503px;
+	z-index: 101
+}
+.header .subTitle {
+	width: 369px;
+	height: 112px;
+	background: url(../images/subTitle.png) no-repeat;
+	background-size: 100% 100%;
+	top: 280px;
+	left: 34px
+}
+.header .light {
+	width: 651px;
+	height: 339px;
+	background: url(../images/light.png) no-repeat;
+	top: 260px;
+	right: -268px;
+	z-index: 102;
+	display: none
+}
+.fiveStar {
+	width:980px;
+	height: auto;
+	z-index: 200;	
+	margin-top: 30px;
+	background: url(../images/bg_tc02.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+.fiveStar .fiveStarBanner {
+	width: 980px;
+	height: 75px;
+	overflow: hidden;
+	padding-top: 35px;
+	padding-bottom: 35px;	
+}
+.fiveStar .fiveStarBanner .fiveStarBannerBox {
+	width: 100%;
+	height: 100%;
+	background: url(../images/fiveStarBanner.png) no-repeat center;
+}
+.fiveStar .star {
+	width: 100%;
+	height: 400px;
+	position: relative;
+}
+.fiveStar .star li {
+	width: 100px;
+	height: 90px;
+	top: 250px;
+	position: absolute;
+	z-index: 110;
+}
+.fiveStar .star img {
+	width: 100%;
+	height: 100%
+}
+.fiveStar .star .star1 {
+	left: 170px
+}
+.fiveStar .star .star2 {
+	left: 310px;
+}
+.fiveStar .star .star3 {
+	left: 440px
+}
+.fiveStar .star .star4 {
+	left: 570px
+}
+.fiveStar .star .star5 {
+	left: 700px
+}
+.fiveStar .star .bigStar {
+	width: 150px;
+	height: 145px;
+	top: 40px;
+	margin-left: -42px
+}
+.fiveStar .star .starLine {
+	width: 8px;
+	height: 153px;
+	background: url(../images/starLine.png) no-repeat;
+	background-size: 100% 100%;
+	top: 160px;
+	left: 70px;
+	position: absolute;
+	display: none;
+}
+.fiveStar .star .showLine {
+	display: block
+}
+.fiveStar .star .word {
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	font-weight: 700;
+	display: none;
+}
+.fiveStar .star .word1 {
+	width: 90px;
+	position: absolute;
+	color: #ff2c1e;
+	top: -50px;
+	left: 30px;
+	
+}
+.fiveStar .star .word2 {
+	width: 90px;
+	position: absolute;
+	color: #ff2c1e;
+	top: 40px;
+	left: 160px
+}
+.fiveStar .star .word3 {
+	width: 90px;
+	position: absolute;
+	color: #ff2c1e;
+	top: 150px;
+	left: 130px
+}
+.fiveStar .star .word4 {
+	position: absolute;
+	color: #ff2c1e;
+	top: 150px;
+	left: -30px;
+	width: 90px
+}
+.fiveStar .star .word5 {
+	position: absolute;
+	color: #ff2c1e;
+	top: 40px;
+	left: -85px;
+	width: 90px
+}
+.fiveStar .star .showWord {
+	display: block
+}
+
+.cityVoice {
+	width: 980px;
+	margin-top: 30px;
+	height: auto;
+	background: url(../images/cityBg.jpg) no-repeat top center;
+}
+.cityVoice .cityBanner {
+	width: 980px;
+	height: 55px;
+	overflow: hidden;
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+.cityVoice .cityBanner .cityBannerBox {
+	width: 100%;
+	height: 100%;
+	background: url(../images/cityBanner.png) no-repeat top center;
+}
+.cityVoice .cityUl {
+	width: 980px;
+	height: 416px;
+	position: relative;
+}
+.cityVoice .cityUl li {
+	position: absolute;
+}
+.cityVoice .cityUl .circle {
+	width: 98px;
+	height: 100px;
+	z-index: 100;
+	cursor: pointer;
+	display: none;
+	border-radius: 50%;
+	box-shadow: 5px 5px 5px #9fa037;
+}
+.cityVoice .cityUl .circle img {
+	width: 98px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+.cityVoice .cityUl .circle .tail {
+	display: inline-block;
+	width: 98px;
+	height: 41px;
+	background: url(../images/circleTial.png) no-repeat center;
+	background-size: 100% 100%;
+	position: absolute;
+	right: 9px;
+	bottom: 0
+}
+.cityVoice .cityUl .circle .place {
+	position: relative;
+	width: 98px;
+	height: 100px;
+	opacity: 0;
+	filter: alpha(opacity=0)
+}
+.cityVoice .cityUl .circle .place .placeBg {
+	display: inline-block;
+	width: 98px;
+	height: 100px;
+	opacity: .5;
+	filter: alpha(opacity=50);
+	background: url(../images/placeBg.png) no-repeat
+}
+.cityVoice .cityUl .circle .place .word {
+	position: absolute;
+	height: 98px;
+	line-height: 100px;
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	top: 0;
+	left: 0;
+	width: 97px;
+	font-weight: 700
+}
+.cityVoice .cityUl .line {
+	z-index: 99;
+	display: none
+}
+.cityVoice .cityUl .p1 {
+	left: 130px;
+	top: 0
+}
+.cityVoice .cityUl .p2 {
+	left: 282px;
+	top: 106px
+}
+.cityVoice .cityUl .p3 {
+	left: 434px;
+	top: 0;
+}
+.cityVoice .cityUl .p4 {
+	left: 432px;
+	top: 184px;
+}
+.cityVoice .cityUl .p5 {
+	left: 130px;
+	top: 184px
+}
+.cityVoice .cityUl .p6 {
+	left: 284px;
+	top:296px;
+}
+.cityVoice .cityUl .p7 {
+	left: 588px;
+	top:296px;
+}
+.cityVoice .cityUl .p8 {
+	left: 588px;
+	top: 140px
+}
+.cityVoice .cityUl .p9 {
+	left:740px;
+	top: 184px
+}
+.cityVoice .cityUl .p10 {
+	left:740px;
+	top: 0
+}
+.cityVoice .cityUl .p11 {
+	left: 588px;
+	top: 0
+}
+.cityVoice .cityUl .l1 {
+	width: 76px;
+	height: 76px;
+	background: url(../images/l-line.png) no-repeat center;
+	left: 214px;
+	top: 75px
+}
+.cityVoice .cityUl .l2 {
+	width: 76px;
+	height: 76px;
+	background: url(../images/r-line.png) no-repeat center;
+	left: 378px;
+	top: 80px;
+}
+.cityVoice .cityUl .l3 {
+	height: 85px;
+	border-left: 1px solid #b65a00;
+	left: 482px;
+	top: 100px;	
+}
+.cityVoice .cityUl .l4 {
+	width: 204px;
+	border-top: 1px solid #b65a00;
+	left: 230px;
+	top: 234px;
+}
+.cityVoice .cityUl .l5 {
+	width: 78px;
+	height: 54px;
+	background: url(../images/l-line.png) no-repeat center;
+	left: 225px;
+	top: 262px;
+}
+.cityVoice .cityUl .l6 {
+	width: 208px;
+	border-top: 1px solid #b65a00;
+	left: 382px;
+	top:346px;
+}
+.cityVoice .cityUl .l7 {
+	height: 90px;
+	border-left: 1px solid #b65a00;
+	left: 637px;
+	top: 206px;
+}
+.cityVoice .cityUl .l8 {
+	width: 63px;
+	height: 45px;
+	background: url(../images/l-line.png) no-repeat center;
+	left: 690px;
+	top: 190px;
+}
+.cityVoice .cityUl .l9 {
+	height: 84px;
+	border-left: 1px solid #b65a00;
+	left: 784px;
+	top: 100px;
+}
+.cityVoice .cityUl .l10 {
+	width: 56px;
+	border-top: 1px solid #b65a00;
+	left: 686px;
+	top: 55px;
+}
+.videoReport_2 {
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-top: 30px;
+	background: url(../images/videoBg.jpg) repeat;
+	background-size: 100% 100%;
+}
+.videoReport_2 .videoBanner_2 {
+	width: 980px;
+	height: 75px;
+	overflow: hidden;
+	background: url(../images/t_xffc.png) no-repeat center center;
+}
+.videoReport_2 .videoBanner_2 .videoBannerBox_2 {
+	width: 680px;
+	height: 100%;
+	background: url(../images/videoBanner.png) no-repeat center
+}
+.videoReport_2 .videoBox_2 {
+	width: 980px;
+	height: 525px;
+	position: relative;
+}
+.videoReport_2 .videoBox_2 .videoBg {
+	width: 715px;
+	height: 100%;
+	float: left;
+	background-color: #000;
+	position: relative
+}
+.videoReport_2 .videoBox_2 .videoBg .video {
+	margin-top: 8px;
+	margin-left: 8px
+}
+.videoReport_2 .videoBox_2 .videoList {
+	width: 265px;
+	float: right
+}
+.videoReport_2 .videoBox_2 .videoList li {
+	width: 265px;
+	height: 103px;
+	background-color: #956320;
+	opacity: .8;
+	border-bottom: 2px solid #885614;
+	cursor: pointer;
+	position: relative
+}
+.videoReport_2 .videoBox_2 .videoList li .select {
+	position: absolute;
+	display: block;
+	left: -19px;
+	top: 50%;
+	margin-top: -20px;
+	background: 0 0;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+	border-right: 20px solid #cc882e
+}
+.videoReport_2 .videoBox_2 .videoList li span {
+	display: inline-block;
+	width: 230px;
+	height: 60px;
+	line-height: 30px;
+	padding: 20px 20px;
+	color: #ffd092;
+	font-family: "å¾®è½¯é›…é»‘";
+	font-size: 16px
+}
+.videoReport_2 .videoBox_2 .videoList .active {
+	background-color: #cc882e;
+	opacity: 1
+}
+.videoReport_2 .videoBox_2 .videoList .active span {
+	color: #fff
+}

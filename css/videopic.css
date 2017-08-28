@@ -1,0 +1,241 @@
+
+.bk2 {
+  height: auto;
+  background: url(../images/bg1.jpg) no-repeat top center;
+  background-size: 100% 100%;
+  margin-top: 40px;
+  position: relative;
+  width: 980px;
+  overflow: hidden;
+}
+.bk2 .layer {
+  padding-top: 10px;
+}
+.bk2 .bgsp {
+  background: url(../images/sprite.png) no-repeat;
+}
+.bk2 .bkhd {
+  width:980px;
+  height:92px;
+  background-position:-463px -112px;
+}
+.toplink {
+  position: absolute;
+  left: 288px;
+  top: 10px;
+  display: block;
+  width: 406px;
+  height: 95px;
+  text-indent: -9999px;
+}
+
+/*******视频报道 begin*********/
+.videoReport {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+}
+
+.videoReport .videoBox {
+  height: 435px;
+  position: relative;
+}
+.videoReport .video img {
+  width: 755px;
+  height: 435px;
+}
+.videoBg .v-play {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  display: block;
+  width: 63px;
+  height: 63px;
+  background-position:-1058px -18px;
+}
+.videoReport .videoBox .videoBg {
+  width: 755px;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.videoReport .videoBox .videoList {
+  width: 225px;
+  float: right;
+}
+.videoReport .videoBox .videoList ul{
+  width: 225px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+.videoReport .videoBox .videoList li {
+  background-color: #fff;
+  opacity: 0.8;
+  cursor: pointer;
+  height: 63px;
+  padding: 18px 18px 19px;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+.videoReport .videoBox .videoList li h4 {
+  color: #1559a2;
+  font-size: 16px;
+  line-height: 1;
+  height: 40px;
+  line-height: 20px;
+  overflow: hidden;
+  margin: 13px 0;
+  font-weight: bold;
+}
+.videoReport .videoBox .videoList li .select {
+  position: absolute;
+  display: block;
+  left: -19px;
+  top: 50%;
+  margin-top: -20px;
+  background: transparent;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #d2aa6f;
+  display: none;
+}
+.videoReport .videoBox .videoList li span {
+  display: none;
+}
+.videoReport .videoBox .videoList .active {
+  background-color: #d2aa6f;
+  opacity: 1;
+}
+.videoReport .videoBox .videoList .active h4, .videoReport .videoBox .videoList .active span {
+  color: #fff;
+}
+
+.videoctrl span {
+  width:23px;
+  height: 14px;
+  padding: 10px 44px 11px 45px;
+  display: inline-block;
+  float: left;
+  background-color: #9d9d9d;
+  cursor: pointer;
+}
+.videoctrl span i {
+  width:23px;
+  height:14px;
+  display: inline-block;
+  float: left;
+}
+.videoctrl .prev {
+  background-position:-1205px -89px;
+}
+.videoctrl .next {
+  background-position:-1180px -89px;
+}
+/*******视频报道 end*********/
+
+.bk5 {
+  width: 980px;
+  height: auto;
+  background: url(../images/bg3.jpg) no-repeat center center;
+  margin-top: 40px;    
+}
+.bk5 .bgsp {
+  background: url(../images/sprite.png) no-repeat;
+}
+.bk5 .bkhd {
+  width:980px;
+  height:92px;
+  background-position:-465px -412px;
+}
+.bk5 .layer {
+  padding-top: 10px;
+}
+
+.hdpics {
+  margin-top: 30px;
+  height: 560px;
+  overflow: hidden;
+  position: relative;
+}
+.hdpics .prev {
+  display: block;
+  width:60px;
+  height:80px;
+  background-position:-1891px -1px;;
+  position: absolute;
+  left: 0;
+  top: 240px;
+  z-index: 2;
+}
+.hdpics .next {
+  display: block;
+  width:60px;
+  height:80px;
+  background-position:-1829px -1px;
+  position: absolute;
+  right: 0;
+  top: 240px;
+  z-index: 2;
+}
+.hdpics .rsBlok {
+  height: 124px;
+}
+.hdpics .swbox{ position: relative; }
+.hdpics .swiper-slide img {
+  width: 980px;
+  height: 560px;
+  display: block;
+}
+.hdpics .aboutthepic {
+  position: absolute;
+  width: 900px;
+  left: 0;
+  bottom: 0;
+  padding: 0 40px;
+  height: 124px;
+  font-size: 18px;
+  font-weight: 100;
+  text-align: center;
+  z-index: 1000;
+  background-color:#000;
+  opacity: .70;
+  filter: alpha(opacity=70)
+}
+.hdpics .aboutthepic h4 {
+  height: 24px;
+  overflow: hidden;
+  margin: 20px 0 15px;
+}
+.hdpics .aboutthepic p {
+  height: 40px;
+  line-height: 20px;
+  font-size: 14px;
+  text-indent: 2em;
+  overflow: hidden;
+  color: #fff;
+  text-align: left;
+}
+.hdpics .aboutthepic a {
+  color: #fff;
+}
+
+.hdpagi {
+  height: 5px;
+  line-height: 5px;
+  margin-top: 20px;
+  text-align: center;
+}
+.hdpagi span {
+  width: 70px;
+  height: 5px;
+  display: inline-block;
+  background-color: #e2c9a7;
+  margin: 0 5px;
+}
+.hdpagi .swiper-active-switch {
+  background-color: #d81f1c;
+}
