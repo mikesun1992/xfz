@@ -138,7 +138,7 @@ a:hover img {
 .head{ width: 100%; height:auto; max-width: 1400px;  overflow: hidden;   }
 .head img{width: 100%; height: auto;}
 
-.content{ width: 980px; height: auto; }
+.content{ width: 980px; height: auto;}
 .qjj {
 	padding-top: 40px
 }
@@ -457,8 +457,8 @@ a:hover img {
 	background-position: -29px -340px
 }
 .tbch {
-	padding-top: 50px;
-	margin-bottom: 50px
+	padding-top: 40px;
+	margin-bottom: 40px
 }
 .highImg {
 	width: 100%;

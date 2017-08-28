@@ -1,10 +1,5 @@
 
-.body_div {
-	width: 980px;
-	background-color: #fff;
-	height: auto;	
-	background-size:100% 100%;
-}
+
 .imgDef a:hover img {
 	opacity: .8;
 	filter: alpha(opacity=80)
@@ -19,7 +14,9 @@
 	z-index: 100
 }
 .header {
+	width: 980px;
 	height: 560px;
+	overflow: hidden;
 	background: url(../images/bg_tc01.jpg) no-repeat;
 	background-size: 100% 100%;
 }
@@ -260,7 +257,7 @@
 	height: 98px;
 	line-height: 100px;
 	color: #fff;
-	font-size: 30px;
+	font-size: 16px;
 	text-align: center;
 	top: 0;
 	left: 0;
