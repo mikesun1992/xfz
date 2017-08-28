@@ -157,11 +157,13 @@ a:hover img {
 	top: 50px;
 	left: 458px;
 	z-index: 102;
+
 }
 .head .czxyj {
 	top: 160px;
 	left:136px;
-	width: 1074px;
+	/*width: 1074px;*/
+	width: 76.714%;
 	height: 222px;
 	background: url(../images/h_word01.png) no-repeat;
 	z-index: 101;
@@ -171,7 +173,8 @@ a:hover img {
 .head .yjddh {
 	top: 380px;
 	left: 300px;
-	width: 798px;
+	/*width: 798px;*/
+	width: 57%;
 	height: 56px;
 	background: url(../images/h_word02.png) no-repeat;
 	background-size: 100% 100%;
