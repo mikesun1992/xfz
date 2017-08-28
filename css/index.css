@@ -116,13 +116,9 @@ a:hover img {
 .width980, .box_1 {
 	width: 980px
 }
-
-
 .width980a {
 	width: 100%
 }
-
-
 .dd {
 	height: 40px
 }
@@ -135,8 +131,52 @@ a:hover img {
 	background: url(../images/bannerN.jpg) center top no-repeat
 }
 
-.head{ width: 100%; height:auto; max-width: 1400px;  overflow: hidden;   }
-.head img{width: 100%; height: auto;}
+.head{ 
+	width:100%; 
+	max-width: 1400px; 
+	height:700px;  
+	overflow: hidden; 
+	background:url(../images/headbg.jpg)  no-repeat ;
+	background-size: 100% 100%;
+}
+.head .layer {
+	width: 100%;
+	position: relative;
+	height: 550px;
+}
+
+.head .czxyj,  .head .yjddh, .head .light {
+	position: absolute;
+	text-indent: -1000px;
+	overflow: hidden;
+}
+.head .light{
+	width: 651px;
+	height: 339px;
+	background: url(../images/light.png) no-repeat;
+	top: 50px;
+	left: 458px;
+	z-index: 102;
+}
+.head .czxyj {
+	top: 160px;
+	left:136px;
+	width: 1074px;
+	height: 222px;
+	background: url(../images/h_word01.png) no-repeat;
+	z-index: 101;
+	background-size: 100% 100%;
+	margin-left: -200%;
+}
+.head .yjddh {
+	top: 380px;
+	left: 300px;
+	width: 798px;
+	height: 56px;
+	background: url(../images/h_word02.png) no-repeat;
+	background-size: 100% 100%;
+	margin-left: -200%;
+}
 
 .content{ width: 980px; height: auto;}
 .qjj {

@@ -12,7 +12,13 @@
 </head>
 <body>
 	<!--head begin-->
-	<div class="head"><img src="images/headbg.jpg"></div>
+	<div class="head">
+		<div class="layer">
+			<div class="light"></div>
+			<div class="czxyj">砥砺前进</div>
+			<div class="yjddh">勇立潮头</div>
+		</div>
+	</div>
 	<!--head end-->
 	<!--主体内容 begin-->
 	<div class="content">
@@ -975,4 +981,18 @@
 	<script type="text/javascript" src="js/a0601all.js"></script>
 
 </body>
+
+<script type="text/javascript">
+		$(document).ready(function() {
+			$(".czxyj").animate({
+				marginLeft: "0"
+			}, 1600);
+			$(".yjddh").animate({
+				marginLeft: "0"
+			}, 2600);
+			$(".light").css("opacity", "0").delay(300).animate({
+				opacity: "1"
+			}, 5000);
+		});
+	</script>
 </html>                     
