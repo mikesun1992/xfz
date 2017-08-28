@@ -240,7 +240,170 @@ $(document).ready(function() {
 			t = e.getFullYear() + "-" + (Number(e.getMonth()) + 1) + "-" + e.getDate() + " " + e.getHours() + ":" + e.getMinutes() + ":" + e.getSeconds();
 		document.cookie = "btmShareLayer=" + t
 	}
+	$(document).ready(function() {
+		function i(e) {
+			var t;
+			return ((t = typeof e) == "object" ? e == null && "null" || Object.prototype.toString.call(e).slice(8, -1) : t).toLowerCase()
+		}
 
+		function s(e, t) {
+			if (t.indexOf) return t.indexOf(e);
+			for (var n = 0, r = t.length; n < r; n++)
+				if (t[n] === e) return n;
+			return -1
+		}
+
+		function o(e, t) {
+			return s(e, t) > -1
+		}
+
+		function u(e) {
+			var t;
+			return e = e.toUpperCase(), e == "TEXT" ? t = document.createTextNode("") : e == "BUFFER" ? t = document.createDocumentFragment() : t = document.createElement(e), t
+		}
+
+		function a(e) {
+			e = e || document;
+			var t = e.documentElement,
+				n = e.body;
+			return {
+				top: Math.max(window.pageYOffset || 0, t.scrollTop, n.scrollTop),
+				left: Math.max(window.pageXOffset || 0, t.scrollLeft, n.scrollLeft)
+			}
+		}
+
+		function f(e, t) {
+			function n(e) {
+				var t = /\\'/g,
+					n = e.replace(/(<(\/?)#(.*?(?:\(.*?\))*)>)|(')|([\r\n\t])|(\$\{([^\}]*?)\})/g, function(e, n, r, i, s, o, u, a) {
+						if (n) return "{|}" + (r ? "-" : "+") + i + "{|}";
+						if (s) return "\\'";
+						if (o) return "";
+						if (u) return "'+(" + a.replace(t, "'") + ")+'"
+					});
+				return n
+			}
+
+			function r(e) {
+				var t, n, r, i, s, o, u, a = ["var aRet = [];"];
+				u = e.split(/\{\|\}/);
+				var f = /\s/;
+				while (u.length) {
+					r = u.shift();
+					if (!r) continue;
+					s = r.charAt(0);
+					if (s !== "+" && s !== "-") {
+						r = "'" + r + "'", a.push("aRet.push(" + r + ");");
+						continue
+					}
+					i = r.split(f);
+					switch (i[0]) {
+						case "+et":
+							t = i[1], n = i[2], a.push('aRet.push("<!--' + t + ' start-->");');
+							break;
+						case "-et":
+							a.push('aRet.push("<!--' + t + ' end-->");');
+							break;
+						case "+if":
+							i.splice(0, 1), a.push("if" + i.join(" ") + "{");
+							break;
+						case "+elseif":
+							i.splice(0, 1), a.push("}else if" + i.join(" ") + "{");
+							break;
+						case "-if":
+							a.push("}");
+							break;
+						case "+else":
+							a.push("}else{");
+							break;
+						case "+list":
+							a.push("if(" + i[1] + ".constructor === Array){with({i:0,l:" + i[1] + ".length," + i[3] + "_index:0," + i[3] + ":null}){for(i=l;i--;){" + i[3] + "_index=(l-i-1);" + i[3] + "=" + i[1] + "[" + i[3] + "_index];");
+							break;
+						case "-list":
+							a.push("}}}");
+							break;
+						default:
+					}
+				}
+				return a.push('return aRet.join("");'), [n, a.join("")]
+			}
+			if (!e) return "";
+			var i = {};
+			e !== i.template && (i.template = e, i.aStatement = r(n(e)));
+			var s = i.aStatement,
+				o = function(e) {
+					return e && (t = e), arguments.callee
+				};
+			return o.toString = function() {
+				return (new Function(s[0], s[1]))(t)
+			}, o
+		}
+
+		function l(e) {
+			var t = i(e) == "string",
+				n = e;
+			t && (n = u("div"), n.innerHTML = e);
+			var r = e;
+			if (t) {
+				r = u("buffer");
+				while (n.children[0]) r.appendChild(n.children[0])
+			}
+			return {
+				box: r
+			}
+		}
+
+		function c(i) {
+			function h() {
+				var e = a(),
+					t = e.top,
+					i, s;
+				t > 0 ? (r.fadeIn(1e3), c && (i = $(window).height(), s = t + i - 190, n.css("top", s)), showbtmShareLayer()) : r.fadeOut(1e3)
+			}
+
+			function p() {
+				return document.body.scrollTop + document.documentElement.scrollTop
+			}
+
+			function d(e) {
+				document.documentElement && document.documentElement.scrollTop ? document.documentElement.scrollTop = e : document.body && (document.body.scrollTop = e)
+			}
+
+			function v() {
+				u != null && (new Date).getTime() - u < 500 && (clearTimeout(o), o = null), u = (new Date).getTime(), o = setTimeout(h, 100)
+			}
+
+			function m() {
+				$("html, body").animate({
+					scrollTop: 0
+				}, 1e3)
+			}
+			if (!i || !i.nodeType) return;
+			if (!t) {
+				var s = l(f(e, {
+					uid: "1764439395",
+					online: !0
+				}).toString()).box;
+				i.appendChild(s), t = !0
+			}
+			n = $("#base_scrollToTop_area"), r = $("#base_scrollToTop");
+			if (n == null) return {
+				destroy: function() {}
+			};
+			var o, u, c = n.css("position") != "fixed";
+			$(window).bind("scroll", v), r.bind("click", m)
+		}
+		var e = ['<#et scrollToTop data><div id="base_scrollToTop_area" class="entranceRight"><a id="base_scrollToTop" class="bg" style="display: none;<#if (data.online !== true)>margin-top:279px;</#if>" href="javascript:void(0);" class="top" title="返回顶部"></a></div></#et>'].join(""),
+			t = !1,
+			n = null,
+			r = null;
+		c(document.body)
+	});
+	var acookie = document.cookie.split("; "),
+		is_open = !1
+
+
+});
 
 
 //视频列表选择
